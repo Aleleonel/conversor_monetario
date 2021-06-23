@@ -2,8 +2,6 @@ from fastapi import FastAPI
 
 from pydantic import BaseModel
 
-from datetime import datetime
-
 from money import ValorMoedas
 
 app = FastAPI()

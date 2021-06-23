@@ -1,5 +1,5 @@
-FROM python:3
+FROM Ubuntu:18.04
 COPY . /app
-RUN pip install requirements.txt
+RUN pip install fastapi && pip install pydantic
 WORKDIR /app
-CMD python converte_money_api.py
+CMD uvicorn converte_money_api:app --reload
